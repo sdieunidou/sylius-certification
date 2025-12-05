@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre comment Sylius gère les pays, qui sont l'entité racine pour la configuration géographique, la livraison et la taxation.
 
+## Documentation Officielle
+*   [Countries Guide](https://docs.sylius.com/en/latest/book/addresses/countries.html)
+
 ## Concepts Clés
 
 Dans Sylius, un **Pays** (`Country`) représente une nation vers laquelle la boutique peut expédier ou facturer.

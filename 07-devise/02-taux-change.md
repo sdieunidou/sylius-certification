@@ -3,6 +3,9 @@
 ## Objectif
 Gérer la conversion entre la devise de base du canal et les autres devises supportées.
 
+## Documentation Officielle
+*   [Exchange Rates](https://docs.sylius.com/en/latest/book/configuration/currencies.html#exchange-rates)
+
 ## Exchange Rate (Taux de Change)
 
 L'entité `ExchangeRate` lie deux devises :

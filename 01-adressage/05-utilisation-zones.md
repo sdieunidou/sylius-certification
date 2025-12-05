@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre les applications pratiques des Zones dans l'écosystème Sylius pour configurer correctement une boutique.
 
+## Documentation Officielle
+*   [Zones Guide](https://docs.sylius.com/en/latest/book/addresses/zones.html)
+
 ## 1. Livraison (Shipping)
 
 C'est l'utilisation la plus courante. Les méthodes de livraison sont restreintes par zone.
@@ -55,22 +58,31 @@ Imaginons une commande vers **Paris, France**.
 5.  **Taxes** :
     *   Taux TVA 20% (Zone A) -> **Prioritaire** (si configuré avec la logique "included in").
 
-## Code : Utiliser le ZoneMatcher
+## Code : Utiliser le ZoneMatcher (Service PHP 8.2)
 
 ```php
-public function checkZone(AddressInterface $address): void 
+use Sylius\Component\Addressing\Matcher\ZoneMatcherInterface;
+use Sylius\Component\Addressing\Model\AddressInterface;
+use Sylius\Component\Addressing\Model\Scope;
+use Symfony\Component\DependencyInjection\Attribute\Autowire;
+
+final readonly class ZoneService
 {
-    /** @var ZoneMatcherInterface $matcher */
-    $matcher = $this->container->get('sylius.zone_matcher');
+    public function __construct(
+        private ZoneMatcherInterface $zoneMatcher,
+    ) {}
 
-    // Trouver TOUTES les zones
-    $zones = $matcher->matchAll($address);
+    public function checkZone(AddressInterface $address): void 
+    {
+        // Trouver TOUTES les zones
+        $zones = $this->zoneMatcher->matchAll($address);
 
-    // Trouver UNE zone (souvent la plus appropriée selon le scope)
-    $shippingZone = $matcher->match($address, Scope::SHIPPING);
+        // Trouver UNE zone (souvent la plus appropriée selon le scope)
+        $shippingZone = $this->zoneMatcher->match($address, Scope::SHIPPING);
 
-    foreach ($zones as $zone) {
-        echo "L'adresse est dans la zone : " . $zone->getName();
+        foreach ($zones as $zone) {
+            // Logique métier
+        }
     }
 }
 ```

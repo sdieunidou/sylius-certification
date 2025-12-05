@@ -3,6 +3,9 @@
 ## Objectif
 Que se passe-t-il après le clic sur "Payer" ?
 
+## Documentation Officielle
+*   [Orders Guide](https://docs.sylius.com/en/latest/book/orders/orders.html)
+
 ## Le OrderProcessor (Rappel)
 Le processeur tourne à chaque modification du panier. Une fois la commande validée (`checkout_completed`), le processeur ne tourne plus automatiquement pour garantir l'immutabilité des prix.
 

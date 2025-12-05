@@ -3,6 +3,9 @@
 ## Objectif
 Outils pour faciliter l'écriture de tests.
 
+## Documentation Officielle
+*   [Testing Guide](https://docs.sylius.com/en/latest/book/testing/index.html)
+
 ## Fixtures (Test Environment)
 Les tests Behat chargent des fixtures à la volée pour chaque scénario.
 

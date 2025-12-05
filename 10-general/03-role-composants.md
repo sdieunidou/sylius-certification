@@ -3,6 +3,9 @@
 ## Objectif
 Savoir à quoi sert chaque brique.
 
+## Documentation Officielle
+*   [Components Documentation](https://docs.sylius.com/en/latest/components_and_bundles/components/index.html)
+
 *   **Addressing** : Pays, Provinces, Zones.
 *   **Attribute** : Attributs dynamiques (EAV) pour produits, etc.
 *   **Channel** : Gestion multicanal.

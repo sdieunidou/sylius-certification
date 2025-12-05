@@ -3,6 +3,9 @@
 ## Objectif
 Visualiser comment Sylius est organisé.
 
+## Documentation Officielle
+*   [Architecture Guide](https://docs.sylius.com/en/latest/book/architecture/index.html)
+
 ## Full Stack Framework
 Sylius n'est pas juste une lib, c'est une application Symfony complète.
 

@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre la philosophie "Resource" qui structure tout Sylius.
 
+## Documentation Officielle
+*   [Resource Bundle Documentation](https://docs.sylius.com/en/latest/components_and_bundles/bundles/SyliusResourceBundle/index.html)
+
 ## Concept
 `SyliusResourceBundle` est un bundle autonome (utilisable hors Sylius E-commerce) qui fournit une couche d'abstraction pour gérer les entités PHP (CRUD).
 

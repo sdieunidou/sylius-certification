@@ -3,6 +3,9 @@
 ## Objectif
 Savoir comment Sylius décide en quelle langue afficher le site.
 
+## Documentation Officielle
+*   [Locale Context](https://docs.sylius.com/en/latest/components_and_bundles/components/Locale/context.html)
+
 ## LocaleContext
 
 Le `LocaleContextInterface` retourne la locale courante.

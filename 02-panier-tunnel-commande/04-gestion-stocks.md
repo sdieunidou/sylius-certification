@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre comment et quand Sylius réserve ou décrémente le stock des produits.
 
+## Documentation Officielle
+*   [Inventory Guide](https://docs.sylius.com/en/latest/book/products/inventory.html)
+
 ## Concepts Clés
 
 *   **On Hand** : Quantité physique en stock.

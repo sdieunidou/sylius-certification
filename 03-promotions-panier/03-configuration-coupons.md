@@ -3,6 +3,9 @@
 ## Objectif
 Gérer les codes promotionnels (Coupons) liés aux promotions de panier.
 
+## Documentation Officielle
+*   [Coupons Guide](https://docs.sylius.com/en/latest/book/orders/promotions.html#coupons)
+
 ## Relation Promotion-Coupon
 
 Une **Promotion** peut être :

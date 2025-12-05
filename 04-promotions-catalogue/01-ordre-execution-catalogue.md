@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre la différence fondamentale entre Promotion Panier (Cart) et Promotion Catalogue.
 
+## Documentation Officielle
+*   [Catalog Promotions Guide](https://docs.sylius.com/en/latest/book/products/catalog_promotions.html)
+
 ## Concept
 Une **Promotion Catalogue** modifie le prix d'une variante de produit **avant** qu'elle ne soit mise au panier.
 Elle s'applique au catalogue produit directement.

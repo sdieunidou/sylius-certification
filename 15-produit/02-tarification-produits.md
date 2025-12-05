@@ -3,6 +3,9 @@
 ## Objectif
 Comment les prix sont stockés.
 
+## Documentation Officielle
+*   [Pricing Guide](https://docs.sylius.com/en/latest/book/products/pricing.html)
+
 ## ChannelPricing
 Le prix n'est PAS sur la Variante directement (car il dépend du canal).
 Il est dans `Sylius\Component\Core\Model\ChannelPricing` (Table `sylius_channel_pricing`).
@@ -14,9 +17,15 @@ Il est dans `Sylius\Component\Core\Model\ChannelPricing` (Table `sylius_channel_
     *   `originalPrice` : Prix barré (INT, optionnel).
     *   `minimumPrice` : Plancher pour les promotions (INT).
 
-## Récupération du prix
+## Récupération du prix (PHP 8.2)
+
 ```php
-$variant->getChannelPricingForChannel($channel)->getPrice();
+public function getPrice(ProductVariantInterface $variant, ChannelInterface $channel): ?int
+{
+    $channelPricing = $variant->getChannelPricingForChannel($channel);
+    
+    return $channelPricing?->getPrice();
+}
 ```
 
 ## Devises

@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre quand et comment les promotions de panier sont appliquées pour garantir des totaux corrects.
 
+## Documentation Officielle
+*   [Promotions Guide](https://docs.sylius.com/en/latest/book/orders/promotions.html)
+
 ## Le OrderProcessor
 
 Le calcul des promotions fait partie du cycle de traitement de la commande (`OrderProcessing`).

@@ -3,6 +3,9 @@
 ## Objectif
 Gestion des notifications transactionnelles.
 
+## Documentation Officielle
+*   [Mailer Guide](https://docs.sylius.com/en/latest/book/support/mailer.html)
+
 ## SyliusMailerBundle
 Abstraction au-dessus de Symfony Mailer.
 
@@ -22,11 +25,20 @@ sylius_mailer:
             enabled: true
 ```
 
-## Envoi
-Service : `SenderInterface`.
+## Envoi (PHP 8.2)
+
+Service : `Sylius\Component\Mailer\Sender\SenderInterface`.
+
 ```php
-$sender->send('order_confirmation', ['user@test.com'], ['order' => $order]);
+use Sylius\Component\Mailer\Sender\SenderInterface;
+
+public function sendConfirmation(SenderInterface $sender, OrderInterface $order): void
+{
+    $email = $order->getCustomer()?->getEmail();
+    
+    if ($email) {
+        $sender->send('order_confirmation', [$email], ['order' => $order]);
+    }
+}
 ```
-Le 2ème argument (destinataire) est un tableau.
-Le 3ème argument (data) est injecté dans le template Twig.
 

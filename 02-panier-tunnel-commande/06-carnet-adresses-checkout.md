@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre comment Sylius gère les adresses enregistrées des clients connectés pour accélérer le checkout.
 
+## Documentation Officielle
+*   [Addresses Guide](https://docs.sylius.com/en/latest/book/customers/addresses.html)
+
 ## Le Service AddressBook
 
 Pour les clients connectés (`Customer` avec un `User`), Sylius maintient un carnet d'adresses (`addresses`).

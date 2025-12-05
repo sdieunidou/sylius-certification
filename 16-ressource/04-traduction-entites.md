@@ -21,10 +21,13 @@ Quand vous faites `$product->getName()`, Sylius :
 2.  Si pas trouvé et fallback activé, cherche dans la locale par défaut.
 3.  Retourne la valeur.
 
-## Proxy Methods
+## Proxy Methods (PHP 8.2)
+
 Sur l'entité principale, on crée des méthodes magiques ou manuelles :
+
 ```php
-public function getName(): ?string {
+public function getName(): ?string 
+{
     return $this->getTranslation()->getName();
 }
 ```
