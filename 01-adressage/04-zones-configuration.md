@@ -3,6 +3,9 @@
 ## Objectif
 Maîtriser le concept de **Zone**, qui est l'unité fondamentale pour appliquer des règles de gestion (frais de port, taxes, promotions) à des zones géographiques.
 
+## Documentation Officielle
+*   [Zones Guide](https://docs.sylius.com/en/latest/book/addresses/zones.html)
+
 ## Concepts Clés
 
 Une **Zone** est un regroupement virtuel d'entités géographiques. Elle ne correspond pas forcément à une frontière physique officielle, mais à une frontière "business".

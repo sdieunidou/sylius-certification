@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre l'application de la TVA.
 
+## Documentation Officielle
+*   [Taxation Guide](https://docs.sylius.com/en/latest/book/orders/taxation.html)
+
 ## Application
 Les taxes s'appliquent à 3 niveaux :
 1.  **Items (Produits)** : Selon la `TaxCategory` du produit.

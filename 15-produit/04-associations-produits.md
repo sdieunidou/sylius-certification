@@ -3,6 +3,9 @@
 ## Objectif
 Cross-selling et Up-selling.
 
+## Documentation Officielle
+*   [Product Associations](https://docs.sylius.com/en/latest/book/products/associations.html)
+
 ## AssociationType
 On définit d'abord des types d'association :
 *   "Produits similaires" (`similar`)

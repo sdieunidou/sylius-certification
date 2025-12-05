@@ -3,6 +3,9 @@
 ## Objectif
 Suivre l'argent.
 
+## Documentation Officielle
+*   [Payment State Machine](https://docs.sylius.com/en/latest/book/orders/payments.html#state-machine)
+
 ## États (`sylius_payment`)
 
 1.  `new` : Créé, montant défini, mais pas encore communiqué à la banque.

@@ -3,6 +3,9 @@
 ## Objectif
 Créer des listes de données filtrables et triables dans l'admin.
 
+## Documentation Officielle
+*   [Grid Bundle Documentation](https://docs.sylius.com/en/latest/components_and_bundles/bundles/SyliusGridBundle/index.html)
+
 ## Format de déclaration
 Les grilles sont configurées en YAML (recommandé) ou PHP.
 Fichier : `config/packages/sylius_grid.yaml`.

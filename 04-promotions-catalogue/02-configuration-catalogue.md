@@ -3,6 +3,9 @@
 ## Objectif
 Paramétrer une réduction catalogue via l'admin ou YAML.
 
+## Documentation Officielle
+*   [Catalog Promotions Guide](https://docs.sylius.com/en/latest/book/products/catalog_promotions.html)
+
 ## Structure
 
 Entité : `Sylius\Component\Core\Model\CatalogPromotion`.

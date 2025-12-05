@@ -3,6 +3,9 @@
 ## Objectif
 Comprendre le rôle des provinces (ou états/régions) dans l'adressage Sylius et leur lien avec les pays.
 
+## Documentation Officielle
+*   [Provinces Guide](https://docs.sylius.com/en/latest/book/addresses/provinces.html)
+
 ## Concepts Clés
 
 Une **Province** représente une subdivision administrative d'un pays (ex: État aux USA, Département ou Région en France).

@@ -3,6 +3,9 @@
 ## Objectif
 Savoir configurer une promotion standard via l'admin ou le code.
 
+## Documentation Officielle
+*   [Promotions Guide](https://docs.sylius.com/en/latest/book/orders/promotions.html)
+
 ## Concepts Clés
 
 Une `Promotion` est définie par :

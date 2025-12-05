@@ -3,6 +3,9 @@
 ## Objectif
 Gérer les langues disponibles.
 
+## Documentation Officielle
+*   [Locales Guide](https://docs.sylius.com/en/latest/book/configuration/locales.html)
+
 ## Entité Locale
 `Sylius\Component\Locale\Model\Locale`.
 *   `code` : Code ISO (fr_FR, en_US, de_DE).

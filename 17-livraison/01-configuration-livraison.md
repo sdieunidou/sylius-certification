@@ -3,6 +3,9 @@
 ## Objectif
 Créer des options d'expédition.
 
+## Documentation Officielle
+*   [Shipments Guide](https://docs.sylius.com/en/latest/book/orders/shipments.html)
+
 ## Modèle
 *   **ShippingMethod** : L'option visible (ex: "DHL Express").
 *   **Zone** : Où est-ce disponible.

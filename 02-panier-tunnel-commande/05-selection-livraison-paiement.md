@@ -3,6 +3,10 @@
 ## Objectif
 Détail technique de la résolution et de la sélection des méthodes logistiques et financières.
 
+## Documentation Officielle
+*   [Shipments Guide](https://docs.sylius.com/en/latest/book/orders/shipments.html)
+*   [Payments Guide](https://docs.sylius.com/en/latest/book/orders/payments.html)
+
 ## Sélection de la Livraison (Shipping)
 
 ### Modèle de données

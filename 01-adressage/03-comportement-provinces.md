@@ -48,14 +48,21 @@ Lorsqu'on définit une **Zone** basée sur les provinces :
 
 > **Best Practice** : Toujours configurer les provinces pour les pays où la fiscalité ou les frais de port varient selon la région (ex: USA, Canada).
 
-## Manipulation Programmatique
+## Manipulation Programmatique (PHP 8.2)
 
 ```php
-$country = $address->getCountryCode(); // 'US'
-$provinces = $countryRepository->findOneBy(['code' => $country])->getProvinces();
+use Sylius\Component\Addressing\Model\AddressInterface;
+use Sylius\Component\Resource\Repository\RepositoryInterface;
 
-if (!$provinces->isEmpty()) {
-    // Logique pour forcer la sélection d'une province
+// ... dans un service ou controller
+public function checkProvinces(AddressInterface $address, RepositoryInterface $countryRepository): void
+{
+    $countryCode = $address->getCountryCode(); // 'US'
+    $country = $countryRepository->findOneBy(['code' => $countryCode]);
+    
+    if (null !== $country && !$country->getProvinces()->isEmpty()) {
+        // Logique pour forcer la sélection d'une province
+    }
 }
 ```
 
